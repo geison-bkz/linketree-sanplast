@@ -1,74 +1,123 @@
 <template>
+  <body>
+    <header>
+      <div class="share-button"></div>
+    </header>
+    <div class="container">
+      <div class="image-container">
+        <img
+          src="../assets/images/sanplast-avatar.jpg"
+          alt="Sanplast Logo Avatar"
+        />
+      </div>
+      <h1>@sanplastindustrialtda</h1>
 
-    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-      <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-        <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#0000ff] to-[#000080] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" />
-      </div>
-      <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-        <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#0000ff] to-[#000080] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" />
-      </div>
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <p class="text-sm leading-6 text-gray-900">
-          <strong class="font-semibold">Teste Link 1</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Texto bonitinho explicando pra onde que vai o link.
-        </p>
-        <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Link 1 <span aria-hidden="true">&rarr;</span></a>
-      </div>
-        <div class="flex flex-1 justify-end">
-      </div>
+      <a class="tile" href="">
+        <div class="icon">
+          <font-awesome-icon :icon="['fas', 'house']" size="lg"/>
+        </div>
+        <p>Sanplast</p>
+        <div class="tile-share-button"></div>
+      </a>
+      <a class="tile" href="">
+        <div class="icon">
+          <font-awesome-icon :icon="['fab', 'linkedin']" size="xl" />
+        </div>
+        <p>Linkedin</p>
+        <div class="tile-share-button"></div>
+      </a>
+      <a class="tile" href="">
+        <div class="icon">
+          <font-awesome-icon :icon="['fab', 'facebook']" size="xl"/>
+        </div>
+        <p>Facebook</p>
+        <div class="tile-share-button"></div>
+      </a>
     </div>
-
-    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-      <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-        <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#0000ff] to-[#000080] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" />
-      </div>
-      <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-        <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#0000ff] to-[#000080] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" />
-      </div>
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <p class="text-sm leading-6 text-gray-900">
-          <strong class="font-semibold">Teste Link 1</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Texto bonitinho explicando pra onde que vai o link.
-        </p>
-        <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Link 1 <span aria-hidden="true">&rarr;</span></a>
-      </div>
-        <div class="flex flex-1 justify-end">
-      </div>
-    </div>
-
-    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-      <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-        <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#0000ff] to-[#000080] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" />
-      </div>
-      <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-        <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#0000ff] to-[#000080] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" />
-      </div>
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <p class="text-sm leading-6 text-gray-900">
-          <strong class="font-semibold">Teste Link 1</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Texto bonitinho explicando pra onde que vai o link.
-        </p>
-        <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Link 1 <span aria-hidden="true">&rarr;</span></a>
-      </div>
-        <div class="flex flex-1 justify-end">
-      </div>
-    </div>
-
-    <div class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-      <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-        <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#0000ff] to-[#000080] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" />
-      </div>
-      <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-        <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#0000ff] to-[#000080] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)" />
-      </div>
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <p class="text-sm leading-6 text-gray-900">
-          <strong class="font-semibold">Teste Link 1</strong><svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Texto bonitinho explicando pra onde que vai o link.
-        </p>
-        <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Link 1 <span aria-hidden="true">&rarr;</span></a>
-      </div>
-        <div class="flex flex-1 justify-end">
-      </div>
-    </div>
-
+  </body>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+header {
+  width: 95%;
+  max-width: 788px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px;
+  margin-top: 15px;
+}
+
+.share-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.container {
+  width: 91%;
+  max-width: 680px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.tile {
+  width: 100%;
+  height: 56px;
+  background-color: rgb(37, 37, 37);
+  margin: 7px;
+  border-radius: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tile-share-button {
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(52, 52, 52);
+}
+
+.image-container {
+  height: 96px;
+  width: 96px;
+  border-radius: 48px;
+  overflow: hidden;
+}
+
+.image-container img {
+  height: 100%;
+}
+
+.icon {
+  margin: 16px 10px;
+  width: 44px;
+  height: 44px;
+}
+</style>
