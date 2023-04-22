@@ -1,6 +1,6 @@
-# CEI - Centro de Empreendedorismo e Inovação
+# Linktree Sanplast
 
-Projeto de extensão UNISUL 2023/1.
+Linktree projetado para a Sanplast.
 
 # Vue 3 + Vite
 
